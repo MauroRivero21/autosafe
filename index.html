@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>AutoSafe</title>
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header class="nav-fixed">
+        <!--Menu Movil-->
+        <div class="mobile-menu">
+            <div class="menu-header">
+                <img class="logo" src="/Paginas Web Edgar/images/Logo.png" alt="Logo de AutoSafe">
+                <button class="close-button">x</button>
+            </div>
+            <ul class="menu-items">
+                <li>
+                    <a href="#">Informe Autosafe</a>
+                </li>
+                <li>
+                    <a href="#">Quiénes somos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!--Overlay para el menu movil-->
+        <div class="menu-overlay"></div>
+        <!-- Encabezado Superior -->
+        <div class="top-header-box">
+            <nav class="nav-top">
+                <div class="top-header-container">
+                    <ul class="top-menu">
+                        <li>
+                            <a href="#">Quiénes somos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/cl.svg"
+                                    alt="cl" loading="lazy">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/co.svg"
+                                    alt="co" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-logo">
+                <img src="/images/Logo.png" class="logo" alt="Logo de AutoSafe">
+            </div>
+            <div class="menu">
+                <button class="button-menu" id="menu-button">Menú</button>
+            </div>
+        </div>
+    </header>
+    <!--SECCION COMPRANDO O VENDIENDO UN AUTO USADO?-->
+    <section class="section-1">
+        <h1 class="title-section">¿Comprando o vendiendo un auto usado?</h1>
+        <h4 class="paragraph-section">Conoce el historial del vehículo:</h4>
+        <span id="dynamic-text" class="dynamic-text"></span>
+    </section>
+    <!--SECCION COMPRAR INFORME-->
+
+    <div class="section-search">
+        <div class="container-search">
+            <p>Conoce el historial del vehículo</p>
+            <div class="container-price">
+                <h4 class="paragraph-section2">Por solo</h4>
+                <h4 class="price">$24.990</h4>
+            </div>
+        </div>
+
+
+        <form action="#" class="container-inform">
+            <input type="text" placeholder="Ingrese la placa. Ej: ABC777">
+            <button>Comprar informe</button>
+            <a href="#">Ver informe ejemplo</a>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
