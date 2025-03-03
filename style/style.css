@@ -302,6 +302,27 @@ img {
   font-size: 15px;
 }
 
+.container-history{
+  max-width: 1216px;
+  margin: auto;
+  padding:2rem;
+}
+
+.paragraph-history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid{
+  padding: 1rem;
+}
+
+.paragraph-history-title{
+  color: rgb(0 40 99/1);
+}
 /*MEDIA QUERY*/
 @media (min-width: 960px) {
   .nav-fixed {
