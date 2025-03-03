@@ -17,6 +17,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #67626f;
+  background-color: #f0f7fa;
+
 }
 
 img {
@@ -229,6 +231,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   height: 100px;
   border-radius: 20px;
@@ -253,21 +256,50 @@ img {
   gap: 3px;
 }
 
-.paragraph-section2{
-    font-weight: 500;
-    color: rgb(0 40 99/1);
-    font-size: 24px;
+.paragraph-section2 {
+  font-weight: 500;
+  color: rgb(0 40 99/1);
+  font-size: 24px;
 }
 
-.container-price .price{
-    font-size: 36px;
-    font-weight: 600;
-    color: rgb(80 192 249/1);
+.container-price .price {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(80 192 249/1);
 }
 
-.container-inform{
-    display: flex;
-    flex-direction: column;
+.container-inform {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-placa {
+  padding: 1rem;
+  width: 224px;
+  font-size: 15px;
+}
+
+.informe-ejemplo {
+  font-size:12px;
+  color: rgb(80 192 249/1);
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.button-informe {
+  background-color: rgb(255 120 67/1);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: none;
+  border: none;
+  font-size: 15px;
 }
 
 /*MEDIA QUERY*/
