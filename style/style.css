@@ -306,6 +306,7 @@ img {
   max-width: 1216px;
   margin: auto;
   padding:2rem;
+  margin-top: 60px;
 }
 
 .paragraph-history{
@@ -314,6 +315,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  font-weight: 400;
+}
+
+.history-paragraph{
+  font-size: 14px;
+  margin-top: 7px;
 }
 
 .grid{
@@ -322,7 +329,50 @@ img {
 
 .paragraph-history-title{
   color: rgb(0 40 99/1);
+  font-size: 22px;
 }
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+  font-size: 12px;
+  color: rgb(0 40 99/1);
+  margin-top: 80px;
+}
+
+.container-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fefefe;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  gap: 6px;
+}
+
+.container-item img {
+  max-width: 100%; 
+  height: 48px; 
+}
+
+.informe-muestra{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.informe{
+  text-decoration: none;
+  color: rgb(80 192 249/1);
+  font-size: 18px;
+}
+
 /*MEDIA QUERY*/
 @media (min-width: 960px) {
   .nav-fixed {
