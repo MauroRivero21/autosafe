@@ -34,8 +34,13 @@ img {
   align-items: center;
   padding-right: 33px;
   padding-left: 31px;
-  margin-top: 20px;
   margin-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  top: 0;
+  background-color: #ffffff;
 }
 
 .nav-top {
@@ -371,6 +376,14 @@ img {
   text-decoration: none;
   color: rgb(80 192 249/1);
   font-size: 18px;
+}
+
+.container-steps{
+
+}
+
+.container-step1{
+  display: flex;
 }
 
 /*MEDIA QUERY*/
