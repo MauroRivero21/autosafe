@@ -33,41 +33,41 @@ const texts = [
 
 let index = 0;
 
-// Función para borrar el texto letra por letra
+
 function deleteText() {
   const currentText = textElement.textContent;
   if (currentText.length > 0) {
-    textElement.textContent = currentText.slice(0, -1); // Borra una letra
-    setTimeout(deleteText, 50); // Velocidad de borrado (50ms por letra)
+    textElement.textContent = currentText.slice(0, -1); 
+    setTimeout(deleteText, 50); 
   } else {
-    setTimeout(writeText, 500); // Espera 500ms antes de escribir el nuevo texto
+    setTimeout(writeText, 500); 
   }
 }
 
 
-// Función para escribir el texto letra por letra
+
 function writeText() {
   const targetText = texts[index];
   let currentText = textElement.textContent;
   if (currentText.length < targetText.length) {
-    textElement.textContent = targetText.slice(0, currentText.length + 1); // Añade una letra
-    setTimeout(writeText, 50); // Velocidad de escritura (50ms por letra)
+    textElement.textContent = targetText.slice(0, currentText.length + 1);
+    setTimeout(writeText, 50); 
   } else {
-    index = (index + 1) % texts.length; // Avanza al siguiente texto
-    setTimeout(deleteText, 2000); // Espera 2 segundos antes de borrar el texto
+    index = (index + 1) % texts.length; 
+    setTimeout(deleteText, 2000); 
   }
 }
 
-// Inicia el proceso
-setTimeout(deleteText, 2000); // Comienza después de 2 segundos
+
+setTimeout(deleteText, 2000); 
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 2,
   spaceBetween: 190,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.next',
+    prevEl: '.previous ',
   },
   breakpoints: {
     640: {
@@ -75,7 +75,7 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     1024: {

@@ -55,7 +55,9 @@
                     </div>
                 </nav>
                 <div class="header-logo">
-                    <img src="/images/Logo.png" class="logo" alt="Logo de AutoSafe">
+                    <div class="container-logo">
+                        <img src="/images/Logo.png" class="logo" alt="Logo de AutoSafe">
+                    </div>
                 </div>
                 <div class="menu">
                     <button class="button-menu" id="menu-button">Menú</button>
@@ -109,7 +111,7 @@
                         <h3>Revisiones técnico mecánicas</h3>
                     </div>
                     <div class="container-item">
-                        <img src="./images/4.webp" alt="historial de propietarios">
+                        <img src="./images/4.png" alt="historial de propietarios">
                         <h3>Historial de propietarios</h3>
                     </div>
                     <div class="container-item">
@@ -141,31 +143,40 @@
         <!--SECCION COMO ¿FUNCIONA?-->
         <section class="container-steps">
             <h3 class="container-steps-title">¿Cómo funciona?</h3>
-            <div class="container-step">
-                <img src="#" alt="paso1">
-                <div>
-                    <h3>Paso 1</h3>
-                    <p>Ingresa la placa y elige el método de paga más conveniente.</p>
+            <div class="container-pasos">
+                <div class="container-step">
+                    <img src="#" class="image-step" alt="logo1">
+                    <div>
+                        <h3>Paso 1</h3>
+                        <p>Ingresa la placa y elige el método de paga más conveniente.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-step">
-                <img src="#" alt="paso2">
-                <div>
-                    <h3>Paso 2</h3>
-                    <p>Nos conectaremos con cientos de fuentes de informacion oficiales.</p>
+                <div class="container-step">
+                    <img src="#" class="image-step" alt="logo2">
+                    <div>
+                        <h3>Paso 2</h3>
+                        <p>Nos conectaremos con cientos de fuentes de informacion oficiales.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-step">
-                <img src="#" alt="paso3">
-                <div>
-                    <h3>Paso 3</h3>
-                    <p>En 5 minutos recibirás el informe en tu correo electrónico.</p>
+                <div class="container-step">
+                    <img src="#" class="image-step" alt="logo3">
+                    <div>
+                        <h3>Paso 3</h3>
+                        <p>En 5 minutos recibirás el informe en tu correo electrónico.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!--QUE DICEN NUESTROS CLIENTES?-->
         <section class="container-clients">
-            <h3 class="clients">¿Qué dicen nuestros clientes?</h3>
+            <div class="clients-header">
+                <h3 class="clients">¿Qué dicen nuestros clientes?</h3>
+                <!-- Botones de navegación Swiper -->
+                <div class="swiper-buttons">
+                    <a href="#" class="previous round">&#8249;</a>
+                    <a href="#" class="next round">&#8250;</a>
+                </div>
+            </div>
             <!-- Swiper Container -->
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -214,20 +225,21 @@
         </section>
         <!--INGRESE LA PLACA-->
         <section class="section-search2">
-            <div class="container-search">
-                <p>Ingresa la placa</p>
-                <div class="container-price">
-                    <h4 class="paragraph-section2">Por solo</h4>
-                    <h4 class="price">$24.990</h4>
+            <div class="section-search2-tablet">
+                <div class="container-search">
+                    <p>Ingresa la placa</p>
+                    <div class="container-price">
+                        <h4 class="paragraph-section2">Por solo</h4>
+                        <h4 class="price">$24.990</h4>
+                    </div>
                 </div>
+                <form action="#" class="container-inform">
+                    <input type="text" class="input-placa" placeholder="Ingrese la placa. Ej: ABC777">
+                    <button class="button-informe">Comprar informe</button>
+                </form>
             </div>
-            <form action="#" class="container-inform">
-                <input type="text" class="input-placa" placeholder="Ingrese la placa. Ej: ABC777">
-                <button class="button-informe">Comprar informe</button>
-            </form>
             <img src="./images/image-car.png" alt="">
         </section>
-        
         <!--FOOTER-->
         <footer class="footer">
             <div class="container-width">
@@ -235,19 +247,36 @@
                     <img src="./images/footer-logo.png" alt="Autosafe Logo">
                 </div>
                 <div class="social-icons">
-                    <a href="#"><img src="./images/mdi_facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="./images/mdi_instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="./images/mdi_linkedin.png" alt="linkedin"></a>
+                    <a href="#">
+                        <img src="./images/mdi_facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/mdi_instagram.png" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/mdi_linkedin.png" alt="linkedin">
+                    </a>
                 </div>
                 <h3 class="footer-h3">Autosafe</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Acceso a Autored</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
+                    <li>
+                        <a href="#">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Acceso a Autored</a>
+                    </li>
+                    <li>
+                        <a href="#">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
                 </ul>
                 <div class="payment-section">
-                    <span class="payment-security">Pago seguro <img src="./images/solar_lock-linear.png" alt="lock"></span>
+                    <span class="payment-security">
+                        Pago seguro
+                        <img src="./images/solar_lock-linear.png" alt="lock">
+                    </span>
                     <p>En este sitio puedes pagar con:</p>
                     <div class="payment-methods">
                         <img src="./images/f1.png" alt="Pago seguro">
