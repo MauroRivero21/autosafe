@@ -17,7 +17,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #67626f;
-  background-color: #f0f7fa;
+  background-color: #f5fcff;
 
 }
 
@@ -493,6 +493,111 @@ img {
   list-style: none;
   z-index: 1;
   padding:0 110px 80px 0;
+}
+
+.section-search2{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 100px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 64px rgba(0, 0, 0, 0.05);
+  margin-left: 32px;
+  margin-right: 32px;
+  z-index: 2;
+  height: 414px;
+  margin-top: 60px;
+}
+
+.section-search2 p{
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+.footer {
+  background-image: url(../images/footer_res.png);
+  height: 647px;
+  width: 100%;
+  padding-top: 90px;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 32px;
+  color: #212529;
+}
+.container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo img {
+  max-width: 150px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icons a {
+  color: #5E9ECB;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #1A395E;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links a {
+  color: #212529;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+.footer-links a:hover {
+  color: #1A395E;
+}
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-top: 1px solid #5E9ECB;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+
+.payment-methods{
+  display: flex;
+}
+
+.payment-methods img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.footer-h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #002863;
+  line-height: normal;
+}
+
+.payment-security{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 /* Diseño responsivo */
