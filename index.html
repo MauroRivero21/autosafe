@@ -1,163 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>AutoSafe</title>
-</head>
-
-<body>
-    <!--ENCABEZADO-->
-    <header class="nav-fixed">
-        <!--Menu Movil-->
-        <div class="mobile-menu">
-            <div class="menu-header">
-                <img class="logo" src="./images/Logo.png" alt="Logo de AutoSafe">
-                <button class="close-button">x</button>
-            </div>
-            <ul class="menu-items">
-                <li>
-                    <a href="#">Informe Autosafe</a>
-                </li>
-                <li>
-                    <a href="#">Quiénes somos</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        <!--Overlay para el menu movil-->
-        <div class="menu-overlay"></div>
-        <!-- Encabezado Superior -->
-        <div class="top-header-box">
-            <nav class="nav-top">
-                <div class="top-header-container">
-                    <ul class="top-menu">
-                        <li>
-                            <a href="#">Quiénes somos</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/cl.svg"
-                                    alt="cl" loading="lazy">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/co.svg"
-                                    alt="co" loading="lazy">
-                            </a>
-                        </li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <title>AutoSafe</title>
+    </head>
+    <body>
+        <!--ENCABEZADO-->
+        <header class="nav-fixed">
+            <!--Menu Movil-->
+            <div class="mobile-menu">
+                <div class="menu-header">
+                    <img class="logo" src="./images/Logo.png" alt="Logo de AutoSafe">
+                    <button class="close-button">x</button>
                 </div>
-            </nav>
-            <div class="header-logo">
-                <img src="/images/Logo.png" class="logo" alt="Logo de AutoSafe">
+                <ul class="menu-items">
+                    <li>
+                        <a href="#">Informe Autosafe</a>
+                    </li>
+                    <li>
+                        <a href="#">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="menu">
-                <button class="button-menu" id="menu-button">Menú</button>
+            <!--Overlay para el menu movil-->
+            <div class="menu-overlay"></div>
+            <!-- Encabezado Superior -->
+            <div class="top-header-box">
+                <nav class="nav-top">
+                    <div class="top-header-container">
+                        <ul class="top-menu">
+                            <li>
+                                <a href="#">Quiénes somos</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/cl.svg" alt="cl" loading="lazy">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="https://autored-public-files.s3.us-east-1.amazonaws.com/recursos/co.svg" alt="co" loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-logo">
+                    <img src="/images/Logo.png" class="logo" alt="Logo de AutoSafe">
+                </div>
+                <div class="menu">
+                    <button class="button-menu" id="menu-button">Menú</button>
+                </div>
             </div>
+        </header>
+        <!--SECCION COMPRANDO O VENDIENDO UN AUTO USADO?-->
+        <section class="section-1">
+            <h1 class="title-section">¿Comprando o vendiendo un auto usado?</h1>
+            <h4 class="paragraph-section">Conoce el historial del vehículo:</h4>
+            <span id="dynamic-text" class="dynamic-text"></span>
+        </section>
+        <!--SECCION COMPRAR INFORME-->
+        <div class="section-search">
+            <div class="container-search">
+                <p>Conoce el historial del vehículo</p>
+                <div class="container-price">
+                    <h4 class="paragraph-section2">Por solo</h4>
+                    <h4 class="price">$24.990</h4>
+                </div>
+            </div>
+            <form action="#" class="container-inform">
+                <input type="text" class="input-placa" placeholder="Ingrese la placa. Ej: ABC777">
+                <button class="button-informe">Comprar informe</button>
+                <a href="#" class="informe-ejemplo">Ver informe ejemplo</a>
+            </form>
         </div>
-    </header>
-    <!--SECCION COMPRANDO O VENDIENDO UN AUTO USADO?-->
-    <section class="section-1">
-        <h1 class="title-section">¿Comprando o vendiendo un auto usado?</h1>
-        <h4 class="paragraph-section">Conoce el historial del vehículo:</h4>
-        <span id="dynamic-text" class="dynamic-text"></span>
-    </section>
-    <!--SECCION COMPRAR INFORME-->
-    <div class="section-search">
-        <div class="container-search">
-            <p>Conoce el historial del vehículo</p>
-            <div class="container-price">
-                <h4 class="paragraph-section2">Por solo</h4>
-                <h4 class="price">$24.990</h4>
-            </div>
-        </div>
-
-
-        <form action="#" class="container-inform">
-            <input type="text" class="input-placa" placeholder="Ingrese la placa. Ej: ABC777">
-            <button class="button-informe">Comprar informe</button>
-            <a href="#" class="informe-ejemplo">Ver informe ejemplo</a>
-        </form>
-    </div>
-
-    <!--SECCION INFORME DE HISTORIAL-->
-    <section class="container-history">
-        <div class="grid">
-            <div class="paragraph-history">
-                <h3 class="paragraph-history-title">¿Por qué deberías comprar el informe de historial?</h3>
-                <p class="history-paragraph">1 de cada 3 vehículos tiene detalle en su historial a tener en
+        <!--SECCION INFORME DE HISTORIAL-->
+        <section class="container-history">
+            <div class="grid">
+                <div class="paragraph-history">
+                    <h3 class="paragraph-history-title">¿Por qué deberías comprar el informe de historial?</h3>
+                    <p class="history-paragraph">
+                        1 de cada 3 vehículos tiene detalle en su historial a tener en
                     consideración. ¡Infórmate antes de
                     comprar
-                    el vehículo!.</p>
+                    el vehículo!.
+                    </p>
+                </div>
+                <div class="container-grid">
+                    <div class="container-item">
+                        <img src="./images/1.png" alt="registro de siniestralidad">
+                        <h3>Registros de siniestralidad</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/2.png" alt="Medidas cautelares">
+                        <h3>Medidas cautelares</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/3.png" alt="revisiones tecnico mecanicas">
+                        <h3>Revisiones técnico mecánicas</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/4.webp" alt="historial de propietarios">
+                        <h3>Historial de propietarios</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/5.png" alt="limitaciones de dominio">
+                        <h3>Limitaciones de dominio/grávamenes</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/6.png" alt="estado de poliza RC y RCE">
+                        <h3>Estado de póliza RC y RCE</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/7.png" alt="Multras e infracciones">
+                        <h3>Multas e infracciones</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/8.png" alt="Historial de solicitudes">
+                        <h3>Historial de solicitudes</h3>
+                    </div>
+                    <div class="container-item">
+                        <img src="./images/9.png" alt="Poliza SOAT">
+                        <h3>Poliza SOAT</h3>
+                    </div>
+                </div>
+                <div class="informe-muestra">
+                    <a href="#" class="informe">Ver informe de muestra &rarr;</a>
+                </div>
             </div>
-            <div class="container-grid">
-                <div class="container-item">
-                    <img src="./images/1.png" alt="registro de siniestralidad">
-                    <h3>Registros de siniestralidad</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/2.png" alt="Medidas cautelares">
-                    <h3>Medidas cautelares</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/3.png" alt="revisiones tecnico mecanicas">
-                    <h3>Revisiones técnico mecánicas</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/4.webp" alt="historial de propietarios">
-                    <h3>Historial de propietarios</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/5.png" alt="limitaciones de dominio">
-                    <h3>Limitaciones de dominio/grávamenes</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/6.png" alt="estado de poliza RC y RCE">
-                    <h3>Estado de póliza RC y RCE</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/7.png" alt="Multras e infracciones">
-                    <h3>Multas e infracciones</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/8.png" alt="Historial de solicitudes">
-                    <h3>Historial de solicitudes</h3>
-                </div>
-                <div class="container-item">
-                    <img src="./images/9.png" alt="Poliza SOAT">
-                    <h3>Poliza SOAT</h3>
+        </section>
+        <!--SECCION COMO ¿FUNCIONA?-->
+        <section class="container-steps">
+            <h3 class="container-steps-title">¿Cómo funciona?</h3>
+            <div class="container-step">
+                <img src="#" alt="paso1">
+                <div>
+                    <h3>Paso 1</h3>
+                    <p>Ingresa la placa y elige el método de paga más conveniente.</p>
                 </div>
             </div>
-            <div class="informe-muestra">
-                <a href="#" class="informe">Ver informe de muestra &rarr;</a>
+            <div class="container-step">
+                <img src="#" alt="paso2">
+                <div>
+                    <h3>Paso 2</h3>
+                    <p>Nos conectaremos con cientos de fuentes de informacion oficiales.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!--SECCION COMO ¿FUNCIONA?-->
-    <section class="container-steps">
-        <h3>¿Como funciona?</h3>
-
-        <div class="container-step1">
-            <img src="#" alt="paso1">
-            <div>
-                <h3>Paso 1</h3>
-                <p>Ingresa la placa y elige el método de paga más conveniente.</p>
+            <div class="container-step">
+                <img src="#" alt="paso3">
+                <div>
+                    <h3>Paso 3</h3>
+                    <p>En 5 minutos recibirás el informe en tu correo electrónico.</p>
+                </div>
             </div>
-        </div>
+        </section>
+        <!--QUE DICEN NUESTROS CLIENTES?-->
+        <section class="container-clients">
+            <h3 class="clients">¿Qué dicen nuestros clientes?</h3>
+            <!-- Swiper Container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <h3 class="name">Daniel Jiménez</h3>
+                            <h5 class="role">Cliente</h5>
+                            <p class="feedback">
+                                El Informe AUTOSAFE me ha gustado mucho ya que es muy fácil de leer y de interpretar, lo adquirí ya que voy a colocar mi vehiculo en venta y quiero saber si debo o tengo algún proceso pendiente ante tránsito.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <h3 class="name">Marcos Gómez</h3>
+                            <h5 class="role">Cliente</h5>
+                            <p class="feedback">
+                                Realizamos la compra del informe de AUTOSAFE con el fin de saber el estado de un vehiculo que queríamos adquirir y gracias a el nos dimos cuenta a tiempo de que el vehiculo tenia inconsistencias de información con la tarjeta de propiedad, por eso lo recomiendo antes de concretar un negocio de compra de vehiculo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <h3 class="name">Cristina Restrepo</h3>
+                            <h5 class="role">Cliente</h5>
+                            <p class="feedback">
+                                Había adquirido otro informe con otra compañía y no lo veía tan completo como el de AUTOSAFE, gracias al informe pude identificar que tenía una foto multa y un proceso pendiente del anterior dueño del vehiculo, por un accidente de tránsito. Los recomiendo 100%.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <h3 class="name">María Correa</h3>
+                            <h5 class="role">Cliente</h5>
+                            <p class="feedback">
+                                El informe proporciona información detallada sobre el historial del vehiculo, incluyendo registro sede accidentes, SOAT, registros de tránsito y más. Estoy muy conforme el costo beneficio los ¡felicito!
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
-
-    <script src="./script.js"></script>
-</body>
-
+            </div>
+        </section>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./script.js" defer></script>
+    </body>
 </html>
